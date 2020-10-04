@@ -46,6 +46,8 @@ ngrokinstallcheck()
                     exit 1
                 fi
         fi
+        fi
+        fi
         
 }
 menu()
