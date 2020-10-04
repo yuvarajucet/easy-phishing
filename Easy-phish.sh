@@ -52,6 +52,7 @@ ngrokinstallcheck()
 }
 menu()
 {
+    cat .banner.txt
     echo -e "${red}[${green}1${red}]${blue}.${yellow}Facebook                     ${red}[${green}3${red}]${blue}.${yellow}Instagram"
     echo -e "${red}[${green}2${red}]${blue}.${yellow}Twitter                      ${red}[${green}4${red}]${blue}.${yellow}Google (gmail)"
     echo ""
