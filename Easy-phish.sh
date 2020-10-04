@@ -11,6 +11,42 @@ red='\e[1;31m'
 yellow='\e[1;33m' 
 echo ""
 echo ""
+ngrokinstallcheck()
+{
+    echo -e "${yellow}[?]${white} Checking NGROK.."
+    if [[ -e ngrok ]];then
+        sleep 1 
+    else
+    echo -e "${yellow}[?]${white} You want to Download NGROK? (Y/N)"
+        read op
+        if [[ $op == "y" ]];then
+            arch=$(uname -a | grep -o 'arm' | head -n1 )
+            arch2=$(uname -a | grep -o 'Android' | head -n1)
+            if [[ $arch == *'arm'* ]] || [[ $arch2 == *'Android'* ]];then
+                wget --no-check-certificate https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-arm.zip > /dev/null 2>&1
+
+                if [[ -e ngrok-stable-linux-arm.zip ]];then
+                    sudo unzip ngrok-stable-linux-arm.zip > /dev/null 2>&1
+                    sudo chmod +x ngrok
+                    sudo rm -rf ngrok-stable-linux-arm.zip
+                else
+                    echo -e "${red}[-] Download error.. exiting...."
+                    sleep 2
+                    exit 1
+                fi
+            else
+                wget --no-check-certificate https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-386.zip > /dev/null 2>&1 
+                if [[ -e ngrok-stable-linux-368.zip ]];then
+                    sudo unzip ngrok-stable-linux-368.zip > /dev/null 2>&1
+                    sudo chmod +x ngrok
+                    sudo rm -rf ngrok-stable-linux-386.zip
+                else
+                    echo -e "${red}[-] Download error.. exiting...."
+                    sleep 2
+                    exit 1
+                fi
+        
+}
 menu()
 {
     echo -e "${red}[${green}1${red}]${blue}.${yellow}Facebook                     ${red}[${green}3${red}]${blue}.${yellow}Instagram"
@@ -35,4 +71,6 @@ menu()
     fi
 
 }
+ngrokinstallcheck
+clear
 menu
