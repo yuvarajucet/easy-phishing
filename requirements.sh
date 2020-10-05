@@ -104,9 +104,9 @@ Requirements()
                 wget --no-check-certificate https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-arm.zip > /dev/null 2>&1
 
                 if [[ -e ngrok-stable-linux-arm.zip ]];then
-                    sudo unzip ngrok-stable-linux-arm.zip > /dev/null 2>&1
-                    sudo chmod +x ngrok
-                    sudo rm -rf ngrok-stable-linux-arm.zip
+                    unzip ngrok-stable-linux-arm.zip > /dev/null 2>&1
+                    chmod +x ngrok
+                    rm -rf ngrok-stable-linux-arm.zip
                 else
                     echo -e "${red}[-] Download error.. exiting...."
                     sleep 2
@@ -115,9 +115,9 @@ Requirements()
             else
                 wget --no-check-certificate https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-386.zip > /dev/null 2>&1 
                 if [[ -e ngrok-stable-linux-386.zip ]];then
-                    sudo unzip ngrok-stable-linux-386.zip > /dev/null 2>&1
-                    sudo chmod +x ngrok
-                    sudo rm -rf ngrok-stable-linux-386.zip
+                    unzip ngrok-stable-linux-386.zip > /dev/null 2>&1
+                    chmod +x ngrok
+                    rm -rf ngrok-stable-linux-386.zip
                 else
                     echo -e "${red}[-] Download error.. exiting...."
                     sleep 2
