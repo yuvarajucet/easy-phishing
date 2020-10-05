@@ -114,8 +114,8 @@ Requirements()
                 fi
             else
                 wget --no-check-certificate https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-386.zip > /dev/null 2>&1 
-                if [[ -e ngrok-stable-linux-368.zip ]];then
-                    sudo unzip ngrok-stable-linux-368.zip > /dev/null 2>&1
+                if [[ -e ngrok-stable-linux-386.zip ]];then
+                    sudo unzip ngrok-stable-linux-386.zip > /dev/null 2>&1
                     sudo chmod +x ngrok
                     sudo rm -rf ngrok-stable-linux-386.zip
                 else
