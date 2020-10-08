@@ -64,7 +64,7 @@ chmod +x requirements.sh
 
 ```./ngrok authtoken <Your Token> ```
 <h5>Step 4:</h5>
-<p>Now run the script</p>
+<p>Now run the script (Easy-phishing.sh)</p>
 </ul>
 <h4>Step 6 :</h4>
 <p>Now Select the social media to hack. and your Phishing link will ready in 10sec</p>
