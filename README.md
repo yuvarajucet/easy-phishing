@@ -50,7 +50,7 @@ chmod +x requirements.sh
 <h4>Step 4 :</h4>
 
 ```
-./requirements.sh #(This script will download needed tools So you press Y for all Otherwise the tool not work properly)
+./requirements.sh #(This script will download needed tools, So you press Y for all, Otherwise the tool will not work properly)
 ```
 <h4>Step 5 :</h4>
 <ul>
