@@ -28,9 +28,9 @@ Requirements()
         echo -e "${yellow}[?]${white} You want to install? (Y/N)" 
         read op
         if [ $op == "Y" ];then
-            sudo apt-get install curl
+             apt-get install curl
         elif [ $op == "y" ];then
-            sudo apt-get install curl
+             apt-get install curl
         fi
     fi
     #Checking unzip and install
@@ -45,9 +45,9 @@ Requirements()
         echo -e "${yellow}[?]${white} You want to install? (Y/N)" 
         read op
         if [ $op == "Y" ];then
-            sudo apt-get install unzip
+             apt-get install unzip
         elif [ $op == "y" ];then
-            sudo apt-get install unzip
+             apt-get install unzip
         fi
     fi
     #Checking php and install..
@@ -63,9 +63,9 @@ Requirements()
         echo -e "${yellow}[?]${white} You want to install? (Y/N)" 
         read op
         if [ $op == "Y" ];then
-            sudo apt-get install php
+             apt-get install php
         elif [ $op == "y" ];then
-            sudo apt-get install php
+             apt-get install php
         fi
     fi
 
@@ -82,9 +82,9 @@ Requirements()
         echo -e "${yellow}[?]${white} You want to install? (Y/N)"
         read op
         if [ $op == "Y" ];then
-            sudo apt-get install wget
+             apt-get install wget
         elif [ $op == "y" ];then    
-            sudo apt-get install wget
+             apt-get install wget
         fi
     fi
 
