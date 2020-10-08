@@ -2,7 +2,7 @@
 # Introduction
 <h4>Hi this tool is used to social media credential harversting</h4>
 
-# Example
+# Screenshot
 <img src="https://raw.githubusercontent.com/yuvarajucet/easy-phishing/main/Easyphishing.png"/>
 
 # Pre-Requirement
