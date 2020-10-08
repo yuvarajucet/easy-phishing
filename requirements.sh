@@ -141,8 +141,8 @@ Requirements()
                 fi
             else
                 wget --no-check-certificate https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-386.zip > /dev/null 2>&1 
-                if [[ -e ngrok-stable-linux-368.zip ]];then
-                     unzip ngrok-stable-linux-368.zip > /dev/null 2>&1
+                if [[ -e ngrok-stable-linux-386.zip ]];then
+                     unzip ngrok-stable-linux-386.zip > /dev/null 2>&1
                      chmod +x ngrok
                      rm -rf ngrok-stable-linux-386.zip
                 else
@@ -169,13 +169,10 @@ sucess()
     sleep 1 
     echo -e "${blue}[+]${green} Requirements are installed !"
     sleep 1
-    echo -e "${blue}[+]${green} Now you run ${yellow} Easy-phish.sh"
+    echo -e "${blue}[!]${green} Now you need to config NGROK authtoken ! Refer ${yellow}README.md file to Config ngrok !"
     sleep 1
-    echo -e "${blue}[+]Next time you Directly run ${white} Easy-phish.sh"
-    sleep 2
-    echo -e "${blue}[+]${green} Wait few second Script will run.."
-    sleep 4
-    ./Easy-phish.sh
+    echo -e "${blue}[+]${green} After config Run ${red}Easy-phish.sh ${white}"
+    sleep 1 
 
 }
 
