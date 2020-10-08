@@ -27,7 +27,11 @@
 </ul>
   
 # Installation
-<p> When you use <b>linux</b> run this commands on your terminal. Suppose you use Android Device you need to download <b>Termux</b> <a href="https://play.google.com/store/apps/details?id=com.termux"> Get Here </a> and download git in termux <b>apt-get install git</b> </p>
+<p> When you use <b>linux</b> run this commands on your terminal. Suppose you use Android Device you need to download <b>Termux</b> <a href="https://play.google.com/store/apps/details?id=com.termux"> Get Here </a> and download git in termux</p>
+  <ul>
+  <li>pkg upgrade</li>
+  <li>apt-get install git</li>
+  </ul>
 <h4>Step 1 :</h4>
 
 ```
