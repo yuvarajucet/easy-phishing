@@ -49,6 +49,20 @@ chmod +x requirements.sh
 ./requirements.sh #(This script will download needed tools So you press Y for all Otherwise the tool not work properly)
 ```
 <h4>Step 5 :</h4>
+<ul>
+<h3> Ngrok</h3>
+<h5>Step 1:</h5>
+<p>You Need to run ngrok first need to configure Authentication Token from ngrok <a href="https://dashboard.ngrok.com/signup">Register Here</a> You can use google account to register and login</p>
+<h5>Step 2:</h5>
+<p>Now goto Dashboard and you see 2nd point that is your Authenticaiton Token, Copy that.</p>
+<h5>Step 3:</h5>
+<p>Paste your authtoken it seem like this</p>
+
+```./ngrok authtoken <Your Token> ```
+<h5>Step 4:</h5>
+<p>Now run the script</p>
+</ul>
+<h4>Step 6 :</h4>
 <p>Now Select the social media to hack. and your Phishing link will ready in 10sec</p>
 <p>Send this link to Victim.</p>
 <h1>BOOOOOM </h1>
