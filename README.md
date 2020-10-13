@@ -68,5 +68,6 @@ chmod +x requirements.sh
 </ul>
 <h4>Step 6 :</h4>
 <p>Now Select the social media to hack. and your Phishing link will ready in 10sec</p>
+<p>Suppose the link is not generated in android device <b>Switch on your mobile hotspot</b> and re-run the script</p>
 <p>Send this link to Victim.</p>
 <h1>BOOOOOM </h1>
