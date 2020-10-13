@@ -4,7 +4,7 @@
 
  
     $file = fopen("log.txt", "a");
-    fwrite($fiel,"Double Check ");
+    fwrite($file,"Double Check ");
     fwrite($file,"\n------------------------\n");
     fwrite($file,"Username--> : ");
     fwrite($file,$uname);
