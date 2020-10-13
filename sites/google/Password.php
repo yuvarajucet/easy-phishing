@@ -3,7 +3,7 @@ session_start();
     $mail = $_SESSION['mail'];
 
     $er = $_GET['password'];
-    if($err == "error")
+    if($er == "error")
     {
         echo "
             <style>
