@@ -25,13 +25,8 @@ Requirements()
     else
         echo -e "${red}[-]${white} Curl Not found."
         sleep 1
-        echo -e "${yellow}[?]${white} You want to install? (Y/N)" 
-        read op
-        if [ $op == "Y" ];then
-             apt-get install curl
-        elif [ $op == "y" ];then
-             apt-get install curl
-        fi
+        echo -e "${yellow}[+]${white} Installing Curl" 
+        apt-get install curl -y  
     fi
     #Checking unzip and install
     echo -e "${yellow}[*]${white} Checking unzip.."
@@ -42,13 +37,8 @@ Requirements()
     else
         echo -e "${red}[-]${white} unzip Not found."
         sleep 1
-        echo -e "${yellow}[?]${white} You want to install? (Y/N)" 
-        read op
-        if [ $op == "Y" ];then
-             apt-get install unzip
-        elif [ $op == "y" ];then
-             apt-get install unzip
-        fi
+        echo -e "${yellow}[+]${white} Installing unzip" 
+        apt-get install unzip -y
     fi
     #Checking php and install..
     sleep 1 
@@ -60,13 +50,8 @@ Requirements()
     else
         echo -e "${red}[-]${white} PHP Not found."
         sleep 1
-        echo -e "${yellow}[?]${white} You want to install? (Y/N)" 
-        read op
-        if [ $op == "Y" ];then
-             apt-get install php
-        elif [ $op == "y" ];then
-             apt-get install php
-        fi
+        echo -e "${yellow}[?]${white} Installing PHP" 
+        apt-get install php -y
     fi
 
     #Cheking WGET 
@@ -79,13 +64,8 @@ Requirements()
     else
         echo -e "${red}[-]${white} wget Not Found.."
         sleep 1 
-        echo -e "${yellow}[?]${white} You want to install? (Y/N)"
-        read op
-        if [ $op == "Y" ];then
-             apt-get install wget
-        elif [ $op == "y" ];then    
-             apt-get install wget
-        fi
+        echo -e "${yellow}[?]${white} Installing wget"
+        apt-get install wget -y
     fi
 
     #Cheking NGROK and install
@@ -95,8 +75,7 @@ Requirements()
         sleep 1 
         echo -e "${green}[+]${white} Ngrok Found.."
     else
-        echo -e "${yellow}[?]${white} You want to Download NGROK? (Y/N)"
-        read op
+        echo -e "${yellow}[+]${white} Installing Ngrok..."
         if [[ $op == "y" ]];then
             arch=$(uname -a | grep -o 'arm' | head -n1 )
             arch2=$(uname -a | grep -o 'Android' | head -n1)
@@ -113,6 +92,7 @@ Requirements()
                     exit 1
                 fi
             else
+            echo -e "${yellow}[+]${white} Installing Ngrok..."
                 wget --no-check-certificate https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-386.zip > /dev/null 2>&1 
                 if [[ -e ngrok-stable-linux-386.zip ]];then
                     unzip ngrok-stable-linux-386.zip > /dev/null 2>&1
@@ -125,6 +105,7 @@ Requirements()
                 fi
             fi
         elif [[ $op == "Y" ]];then
+            echo -e "${yellow}[+]${white} Installing Ngrok...."
             arch=$(uname -a | grep -o 'arm' | head -n1 )
             arch2=$(uname -a | grep -o 'Android' | head -n1)
             if [[ $arch == *'arm'* ]] || [[ $arch2 == *'Android'* ]];then
@@ -140,6 +121,7 @@ Requirements()
                     exit 1
                 fi
             else
+                echo -e "${yellow}[+]${white} Installing Ngrok..."
                 wget --no-check-certificate https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-386.zip > /dev/null 2>&1 
                 if [[ -e ngrok-stable-linux-386.zip ]];then
                      unzip ngrok-stable-linux-386.zip > /dev/null 2>&1
