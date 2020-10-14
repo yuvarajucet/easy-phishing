@@ -48,6 +48,9 @@ cd Easy-phishing
 chmod +x requirements.sh
 ```
 <h4>Step 4 :</h4>
+<ul>
+  <li>When you use linux use sudo ./requirements.sh</li>
+</ul>
 
 ```
 ./requirements.sh #(This script will download needed tools, So you press Y for all, Otherwise the tool will not work properly)
