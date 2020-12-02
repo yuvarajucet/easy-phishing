@@ -1,0 +1,8 @@
+#!/usr/bin/bash
+
+cp -r sites/ $HOME/
+touch $HOME/sites/log.txt
+touch $HOME/sites/.history.txt
+touch $HOME/sites/.link.txt
+chmod u+x phishing-gui.py
+
