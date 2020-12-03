@@ -6,5 +6,6 @@ touch $HOME/sites/.history.txt
 touch $HOME/sites/.link.txt
 chmod u+x phishing-gui.py
 
+sudo apt-get install python3-pip
 pip3 install -r requirements.txt
 
