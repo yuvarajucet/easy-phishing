@@ -1,4 +1,4 @@
-#!/usr/bin/bash
+#!/bin/bash
 
 cp -r sites/ $HOME/
 touch $HOME/sites/log.txt
