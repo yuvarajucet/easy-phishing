@@ -22,3 +22,15 @@ chmod u+x configure
 ```
 python3 phishing-gui.py
 ```
+
+## Screenshot
+### Home
+ <img src="https://raw.githubusercontent.com/yuvarajucet/easy-phishing/main/GUI/home.png"/>
+
+### Link generating
+  <img src="https://raw.githubusercontent.com/yuvarajucet/easy-phishing/main/GUI/link.png"/>
+  
+ ### Hacked Data
+  <img src="https://raw.githubusercontent.com/yuvarajucet/easy-phishing/main/GUI/cread.png"/>
+  
+ # Thank you
