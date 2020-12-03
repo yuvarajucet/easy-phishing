@@ -1,4 +1,4 @@
-# Easy-phishing
+# Easy-phishing [CLI Mode]
 # Introduction
 <h4>Hi this tool is used to social media credential harversting</h4>
 
