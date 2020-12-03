@@ -1,4 +1,4 @@
-#!/usr/bin/bash
+#!/bin/bash
 #banner area
 clear
 cat .banner.txt
